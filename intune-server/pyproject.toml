@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "intune-server"
+version = "0.1.0"
+description = ""
+authors = ["Eric Jiang <edj9@duke.edu>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+Flask = "^2.1.1"
+Flask-Cors = "^3.0.10"
+Flask-Session = "^0.4.0"
+python-dotenv = "^0.20.0"
+paramiko = "^2.10.3"
+scp = "^0.14.4"
+requests = "^2.27.1"
+spotipy = "^2.19.0"
+pymongo = {extras = ["srv"], version = "^4.1.1"}
+Flask-APScheduler = "^1.12.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
